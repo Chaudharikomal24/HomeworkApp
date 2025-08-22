@@ -1,0 +1,83 @@
+Teacher Dashboard
+Button - Add Homework.
+Button - View Homework List.
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <Button
+        android:id="@+id/addHomeworkBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Homework"/>
+
+    <Button
+        android:id="@+id/homeworkListBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Homework List"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
+
+
+
+ADD HOMEWORK 
+Add Homework
+Enter Title, Subject, Due Date, Description.
+Save - stores in Firestore + schedules reminder.
+
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title" />
+
+        <EditText
+            android:id="@+id/subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subject"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:id="@+id/dueDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Due Date (DD/MM/YYYY)"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Description"
+            android:gravity="top"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
+
