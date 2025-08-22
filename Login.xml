@@ -1,8 +1,3 @@
-Login
-Enter Email + Password.
-Register as Teacher or Student.
-After login - goes to dashboard based on role.
-
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
