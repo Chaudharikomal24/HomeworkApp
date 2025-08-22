@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FFFFFF"
+    android:padding="8dp">
+
+    <!-- Color Blocks -->
+    <TextView
+        android:id="@+id/color1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="5F5449"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:background="#5F5449"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/color2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="9B6A6C"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:background="#9B6A6C"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/color3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="B09398"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:background="#B09398"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/color4"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="CEDFD9"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:background="#CEDFD9"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/color5"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="EBFCFB"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:background="#EBFCFB"
+        android:layout_marginBottom="8dp" />
+
+</LinearLayout>
+
+
