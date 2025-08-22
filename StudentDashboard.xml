@@ -1,0 +1,30 @@
+STUDENT DASHBOARD 
+Student Dashboard
+See options:
+Pending Homework
+Completed Homework
+All Homework
+Open homework list accordingly.
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <Button
+        android:id="@+id/homeworkBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Homework"/>
+
+    <Button
+        android:id="@+id/completedBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Completed"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
+
