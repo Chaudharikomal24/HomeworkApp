@@ -1,0 +1,40 @@
+package com.example.colorpalette
+import android.content.ClipData
+import android.content.ClipboardManager
+import android.content.Context
+import android.os.Bundle
+import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+
+class MainActivity : AppCompatActivity() {
+
+    private val colors = listOf("5F5449", "9B6A6C", "B09398", "CEDFD9", "EBFCFB")
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val views = listOf<TextView>(
+            findViewById(R.id.color1),
+            findViewById(R.id.color2),
+            findViewById(R.id.color3),
+            findViewById(R.id.color4),
+            findViewById(R.id.color5)
+        )
+
+        // Copy HEX code on tap
+        views.forEachIndexed { index, textView ->
+            textView.setOnClickListener {
+                copyToClipboard(colors[index])
+                Toast.makeText(this, "Copied #${colors[index]}", Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+
+    private fun copyToClipboard(text: String) {
+        val clipboard = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+        val clip = ClipData.newPlainText("hexColor", text)
+        clipboard.setPrimaryClip(clip)
+    }
+}
